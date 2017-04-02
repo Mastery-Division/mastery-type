@@ -1,0 +1,45 @@
+{
+  "name": "mastery-type",
+  "version": "0.0.1",
+  "description": "Simple module for determining type",
+  "homepage": "https://github.com/Mastery-Division/mastery-type#readme",
+  "author": "Chris Lee <leec85@gmail.com> (http://www.masterydivision.com)",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "Log",
+    "logger"
+  ],
+  "devDependencies": {
+    "nsp": "^2.6.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 && jest",
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mastery-Division/mastery-type.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mastery-Division/mastery-type/issues"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
