@@ -13,14 +13,15 @@
     "logger"
   ],
   "devDependencies": {
-    "nsp": "^2.6.3",
     "eslint": "^3.18.0",
     "eslint-config-xo-space": "^0.16.0",
     "jest": "^19.0.2",
-    "jest-cli": "^19.0.1"
+    "jest-cli": "^19.0.1",
+    "mocha": "^3.2.0",
+    "nsp": "^2.6.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1 && jest",
+    "test": "./node_modules/.bin/mocha ./lib/__tests__/masteryType.test.js",
     "prepublish": "nsp check",
     "pretest": "eslint . --fix"
   },
